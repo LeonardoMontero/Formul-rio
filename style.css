@@ -4,12 +4,11 @@ body {
     margin: 0;
     font-family: sans-serif;
     border-color: rgb(204, 204, 204);
+    align-items: center;
 }
 
 fieldset {
     border: none;
-    width: 100%;
-    align-items: left;
 }
 
 .formularin {
@@ -23,11 +22,10 @@ fieldset {
 }
 
 .login {
-    margin-left: 10%;
+    margin-left: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
     width: 600px;
     font-size: 20px;
 }
@@ -79,9 +77,6 @@ fieldset {
     width: 100%;
 }
 
-.login .formus{
-    width: 100%;
-}
 
 .password-container button {
     display: flex;
@@ -120,14 +115,13 @@ fieldset {
     .nicebg {
         display: none;
     }
-    
+
     .formularin {
         justify-content: center;
     }
     
     .login {
         width: 100%;
-        max-width: 500px;
     }
 }
 
@@ -142,8 +136,9 @@ fieldset {
         margin-left: 0px;
     }
 
-    .login input {
-        width: 115%;
+    .login p {
+        font-size: 14px;
+        text-align: center;
     }
 
     .formus{
@@ -185,7 +180,6 @@ fieldset {
     fieldset {
         padding: 1rem;
         margin: 0.5rem 0;
-        width: 390px;
     }
 
     .finalzin {
