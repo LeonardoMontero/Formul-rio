@@ -1,0 +1,197 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    border-color: rgb(204, 204, 204);
+}
+
+fieldset {
+    border: none;
+    width: 100%;
+    align-items: left;
+}
+
+.formularin {
+    display: flex;
+    height: 100vh;
+}
+
+.nicebg {
+    width: 45%;
+    height: 100vh;
+}
+
+.login {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 600px;
+    font-size: 20px;
+}
+
+.titulo {
+    padding-left: 15px;
+}
+
+.finalzin {
+    padding-left: 15px;
+}
+.login .forminho {
+    color: rgb(199, 199, 199);
+}
+
+.forminho:focus-within>legend {                                            /*seu viado, tive que pegar isso no gpt pq n ia saber nunca (mudar a cor da legenda do fieldset quando o campo está selecinado)*/
+    color: #000000 !important;
+}
+
+.forminho:has(input[type="password"]:focus) .campo-label {                 /*seu viado, tive que pegar isso no gpt pq n ia saber nunca (mudar a cor da legenda do fieldset quando o campo está selecinado)*/
+    color: #000000;
+}
+
+.login input {
+    width: 95%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid rgb(199, 199, 199);
+    color: rgb(199, 199, 199);
+}
+
+.forminho {
+    margin-top: 10px;
+}
+
+.olho-img {
+    width: 24px;
+    height: 24px;
+}
+
+.botao-olho:hover .olho-img {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%);
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.login .formus{
+    width: 100%;
+}
+
+.password-container button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+}
+
+.password-container button p {
+    color: rgb(199, 199, 199);
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.password-container button:hover {
+    cursor: pointer;
+}
+
+.password-container button:hover p {
+    color: black;
+}
+
+.finalzin button{
+    width: 100%;
+    height: 70px;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(199, 199, 199);
+    margin-top: 4%;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1399px) {
+    .nicebg {
+        display: none;
+    }
+    
+    .formularin {
+        justify-content: center;
+    }
+    
+    .login {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        justify-content: center;
+    }
+
+    .login {
+        padding: 15px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .login input {
+        width: 115%;
+    }
+
+    .formus{
+        justify-content: center;
+    }
+    
+    .titulo h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .titulo p, .finalzin p {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .forminho input {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .forminho legend {
+        font-size: 13px;
+    }
+    
+    .forminho span {
+        font-size: 12px;
+    }
+    
+    .finalzin button {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .botao-olho p {
+        font-size: 13px;
+    }
+    
+    fieldset {
+        padding: 1rem;
+        margin: 0.5rem 0;
+        width: 390px;
+    }
+
+    .finalzin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
