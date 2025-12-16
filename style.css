@@ -1,6 +1,6 @@
 body {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     font-family: sans-serif;
     border-color: rgb(204, 204, 204);
@@ -187,5 +187,19 @@ fieldset {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+}
+
+@media (orientation: landscape) {
+    .formularin{
+        display: block;
+    }
+
+    .login {
+        margin-left: 0px;
+    }
+
+    .separator {
+        display: none;
     }
 }
