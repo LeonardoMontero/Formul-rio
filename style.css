@@ -122,6 +122,8 @@ fieldset {
     
     .login {
         width: 100%;
+        display: block;
+        margin-left: 0px;
     }
 }
 
@@ -133,6 +135,8 @@ fieldset {
     .login {
         padding: 15px;
         width: 100%;
+        margin-left: 0px;
+        display: block;
         margin-left: 0px;
     }
 
@@ -190,7 +194,7 @@ fieldset {
     }
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-width: 900px) {
     .formularin{
         display: block;
     }
